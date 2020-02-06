@@ -2501,6 +2501,12 @@ section.subpage-section.dark-background h2:before {
 
 .product-box-image-wrapper {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     background-color: white;
     overflow: hidden;
     border: .25em solid white;
@@ -2548,9 +2554,9 @@ section.subpage-section.dark-background h2:before {
     transition: all .5s ease-in;
 }
 
-@media (min-width: 25em) {
+@media (min-width: 35em) {
     .product-box-image-wrapper>img {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
     }
 }
