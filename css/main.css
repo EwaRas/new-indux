@@ -70,13 +70,13 @@ body h3 {
     margin: 0;
     padding: 1em 0;
     line-height: 1.25;
-    font-family: 'Titillium Web', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
 }
 
 body h1,
 body h2 {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 body p {
@@ -1910,7 +1910,7 @@ span.white {
 
 .subpage-header .subpage-h1 {
     color: #f5f5f0;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 1.05;
     padding: 0;
     margin: .5em auto;
@@ -1919,12 +1919,18 @@ span.white {
 
 @media (min-width: 25em) {
     .subpage-header .subpage-h1 {
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 }
 
 @media (min-width: 48em) {
     .subpage-header .subpage-h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 64em) {
+    subpage-header .subpage-h1 {
         font-size: 4.5em;
     }
 }
@@ -1948,6 +1954,13 @@ section.subpage-section>h2 {
     position: relative;
     text-align: center;
     line-height: 1.05;
+}
+
+@media (min-width: 48em) {
+    section.subpage-section>h2 {
+        margin-bottom: 2em;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 48em) {
@@ -2061,6 +2074,10 @@ section.subpage-section.dark-background h2:before {
     border-bottom: 1px solid #e4e4e4;
 }
 
+.subpage-section.two-column-box>.subpage-text-wrapper>h2 {
+    font-size: 1.2em;
+}
+
 @media (min-width: 25em) {
     .subpage-section.two-column-box .subpage-text-wrapper {
         padding: 0 1.5em;
@@ -2071,6 +2088,9 @@ section.subpage-section.dark-background h2:before {
     .subpage-section.two-column-box .subpage-text-wrapper {
         padding: 0 2em 0 0;
         width: 59%;
+    }
+    .subpage-section.two-column-box .subpage-text-wrapper>h2 {
+        font-size: 1.3em;
     }
 }
 
